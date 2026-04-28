@@ -6,16 +6,11 @@ Real-time system phát hiện **stress trong bài viết Reddit** sử dụng Ka
 
 ## 📌 Pipeline
 
-Reddit / CSV
-↓
-Kafka (crawl topic)
-↓
-Spark Structured Streaming (preprocess + predict)
-↓
-Kafka (detected topic)
-↓
-Streamlit Dashboard
-
+- Reddit / CSV  
+- Kafka (crawl topic)  
+- Spark Structured Streaming (preprocess + predict)  
+- Kafka (detected topic)  
+- Streamlit Dashboard  
 
 ---
 
