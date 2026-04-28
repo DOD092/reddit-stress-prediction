@@ -77,9 +77,9 @@ bin/kafka-server-start.sh config/server.properties
 ### 3. Train model (Airflow)
 ```bash
 airflow standalone
-
-Open: http://localhost:8080
 ```
+Open: http://localhost:8080
+
 
 Run: offline_dag
 Run: online_dag
@@ -101,3 +101,4 @@ streamlit run visualize/detected-result.py
 ```
 
 Open: http://localhost:8501
+Open: http://localhost:8502
