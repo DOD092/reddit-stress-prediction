@@ -56,6 +56,7 @@ Open: http://localhost:8080
 ```
 
 Run: offline_dag
+Run: online_dag
 
 ### 4. Start streaming
 ```bash
