@@ -1,0 +1,9 @@
+{
+    "model_name": "GradientBoosted",
+    "model_path": "/mnt/c/Users/ADMIN/Desktop/project/reddit_prediction/models/GradientBoosted",
+    "accuracy": 0.6606060606060606,
+    "precision": 0.6636683235030783,
+    "recall": 0.6606060606060606,
+    "f1_score": 0.6576274000745792,
+    "percentage_matching": 66.06060606060606
+}

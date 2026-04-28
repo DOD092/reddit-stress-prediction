@@ -1,0 +1,20 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Airflow
+airflow/logs/
+airflow/airflow.db
+
+# Spark
+checkpoints/
+
+
+# Env
+.env
+
+# OS
+.DS_Store
+Thumbs.db

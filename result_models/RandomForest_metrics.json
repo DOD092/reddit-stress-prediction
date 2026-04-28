@@ -1,0 +1,9 @@
+{
+    "model_name": "RandomForest",
+    "model_path": "/mnt/c/Users/ADMIN/Desktop/project/reddit_prediction/models/RandomForest",
+    "accuracy": 0.6803030303030303,
+    "precision": 0.6852473398752891,
+    "recall": 0.6803030303030303,
+    "f1_score": 0.6768082245873394,
+    "percentage_matching": 68.03030303030303
+}

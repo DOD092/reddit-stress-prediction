@@ -1,0 +1,9 @@
+{
+    "model_name": "SVM",
+    "model_path": "/mnt/c/Users/ADMIN/Desktop/project/reddit_prediction/models/SVM",
+    "accuracy": 0.6712121212121213,
+    "precision": 0.6750940501262928,
+    "recall": 0.6712121212121211,
+    "f1_score": 0.6680325289002147,
+    "percentage_matching": 67.12121212121212
+}
