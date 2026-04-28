@@ -6,11 +6,43 @@ Real-time system phát hiện **stress trong bài viết Reddit** sử dụng Ka
 
 ## 📌 Pipeline
 
-- Reddit / CSV  
-- Kafka (crawl topic)  
-- Spark Structured Streaming (preprocess + predict)  
-- Kafka (detected topic)  
-- Streamlit Dashboard  
+### 🔹 Offline Pipeline (Training)
+
+- Load dataset (CSV)
+- Data preprocessing (clean, tokenize)
+- Train models (SVM, Logistic Regression, Random Forest, ...)
+- Evaluate models (Accuracy, F1-score)
+- Select best model
+- Save model → `models/Best_model_*`
+
+### 🔹 Online Pipeline (Real-time)
+
+- Crawl data (Reddit / CSV)
+- Push data → Kafka (crawl topic)
+- Spark Structured Streaming:
+  - Read Kafka stream
+  - Preprocess text
+  - Load Best_model
+  - Predict stress
+- Push result → Kafka (detected topic)
+- Streamlit Dashboard:
+  - Crawled Data visualization
+  - Detected Result visualization
+---
+
+### 🔹 Online Pipeline (Real-time)
+
+- Crawl data (Reddit / CSV)
+- Push data → Kafka (crawl topic)
+- Spark Structured Streaming:
+  - Read Kafka stream
+  - Preprocess text
+  - Load Best_model
+  - Predict stress
+- Push result → Kafka (detected topic)
+- Streamlit Dashboard:
+  - Crawled Data visualization
+  - Detected Result visualization
 
 ---
 
