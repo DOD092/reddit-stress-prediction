@@ -6,7 +6,6 @@ Real-time system phát hiện **stress trong bài viết Reddit** sử dụng Ka
 
 ## 📌 Pipeline
 
-
 Reddit / CSV
 ↓
 Kafka (crawl topic)
