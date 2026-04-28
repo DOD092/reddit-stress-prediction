@@ -34,32 +34,43 @@ Streamlit Dashboard
 ## ▶️ How to Run
 
 ### 1. Setup
-
+```bash
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+```
 
 ### 2. Start Kafka
+```bash
 cd ~/kafka
 bin/zookeeper-server-start.sh config/zookeeper.properties
 cd ~/kafka
 bin/kafka-server-start.sh config/server.properties
+```
 
 ### 3. Train model (Airflow)
+```bash
 airflow standalone
 
 Open: http://localhost:8080
+```
 
 Run: offline_dag
 
 ### 4. Start streaming
+```bash
 python _spark/stream.py
+```
 
 ### 5. Push data
+```bash
 python _kafka/produce.py
+```
 
 ### 6. Dashboard
+```bash
 streamlit run visualize/crawled-data.py
 streamlit run visualize/detected-result.py
+```
 
 Open: http://localhost:8501
