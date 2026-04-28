@@ -31,11 +31,10 @@ Streamlit Dashboard
 ---
 
 
-## ▶️ How to Run (Local - No Docker)
+## ▶️ How to Run
 
 ### 1. Setup
 
-```bash
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
